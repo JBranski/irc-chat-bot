@@ -8,8 +8,8 @@ export const Commands = class extends Component {
 			"!best" : "You da best",
 			"!steam" : "Sorry, I only add close friends on steam!",
 			"!game" : "We are currently watching some poor gameplay by Faith",
-			"!color" : "My name is the color ${context.color}!",
-			"!dice" : "You rolled a ${num}"
+			"!color" : "My name is the color 'color'!",
+			"!dice" : "You rolled a 'number'"
 		}
 		return (
 			<main className="Commands">
