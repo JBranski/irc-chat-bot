@@ -36,6 +36,31 @@ export const Requests = class extends Component {
 				console.error({ error })
 			})
 	}
+
+	commandRequest = (e) => {
+		e.preventDefault();
+		let command = {
+			name: e.target['commandName'],
+			response: e.target['commandRes']
+		}
+
+		fetch(`API/names`, {
+			method: 'POST',
+			header: {
+				'content-type': 'application/json'
+			},
+			body: JSON.stringify(command),
+		})
+			.then(res => {
+				if(!res.ok) {
+					return res.json().then(e => Promise.reject(e))
+				}
+				return res.json()
+			})
+			.catch(error => {
+				console.error({ error })
+			})
+	}
 	
 	sendChannelRequest = (e) => {
 		e.preventDefault();
