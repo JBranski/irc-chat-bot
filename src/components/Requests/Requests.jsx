@@ -21,7 +21,7 @@ export const Requests = class extends Component {
 			name: e.target['channelName'].value
 		}
 
-		fetch(`${config.API_ENDPOINT}/names`, {
+		fetch(`${config.API_ENDPOINT}/requests`, {
 			method: 'POST',
 			mode: 'cors',
 			header: {
@@ -47,7 +47,7 @@ export const Requests = class extends Component {
 			response: e.target['commandRes'].value
 		}
 
-		fetch(`${config.API_ENDPOINT}/names`, {
+		fetch(`${config.API_ENDPOINT}/requests`, {
 			method: 'POST',
 			mode: 'cors',
 			header: {
