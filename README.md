@@ -1,8 +1,8 @@
 # Welcome to the Ame IRC Twitch Bot
 
 ## Links
-[Live App](https://ame-chat-bot.vercel.app/)
-[Client Repo](https://github.com/JBranski/irc-chat-bot/)
+[Live App](https://ame-chat-bot.vercel.app/)  
+[Client Repo](https://github.com/JBranski/irc-chat-bot/)  
 [Server Repo](https://github.com/JBranski/amebot-server/)
 
 ## Summary
