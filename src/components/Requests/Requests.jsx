@@ -44,7 +44,7 @@ export const Requests = class extends Component {
 		e.preventDefault();
 		let command = {
 			name: e.target['commandName'].value,
-			response: e.target['commandRes'].value
+			comresponse: e.target['commandRes'].value
 		}
 
 		fetch(`${config.API_ENDPOINT}/requests`, {
