@@ -17,5 +17,8 @@ html, body {
 	main {
 		margin: 75px auto 0;
 		max-width: 936px;
+		@media(max-width: 936px) {
+			padding: 0 16px;
+		}
 	}
 }

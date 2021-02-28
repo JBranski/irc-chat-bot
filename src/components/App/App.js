@@ -10,13 +10,13 @@ import './App.min.css';
 
 export default function App() {
 	return (
-		<article className='App'>
+		<div className='App'>
 			<Navigation />
 			<Switch>
 				<Route exact path="/" component={ Home } />
 				<Route path="/commands" component={ Commands } />
 				<Route path="/requests" component={ Requests } />
 			</Switch>
-		</article>
+		</div>
 	);
 }

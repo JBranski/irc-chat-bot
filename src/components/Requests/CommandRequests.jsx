@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const CommandRequests = () => {
+export const CommandRequests = (props) => {
 	return (
-		<form action="" className="CommandRequests" onSubmit={(e) => PaymentResponse.requestChannel(e)}>
+		<form action="" className="CommandRequests" onSubmit={(e) => props.reqCommand(e)}>
 			<p>Please enter a command name and the desired command response.</p>
 			<label>
 				Command name:<br />

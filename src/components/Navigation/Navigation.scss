@@ -24,13 +24,27 @@
 
 		list-style: none;
 
+		@media(max-width: 680px) {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+
 		li:first-of-type {
 			margin-left: 20px;
 			margin-right: auto;
+
+			@media(max-width: 680px){
+				width: 100%;
+				text-align: center;
+			}
 		}
 
 		li {
 			margin: 0 2em;
+			
+			@media(max-width: 680px){
+				margin: 0;
+			}
 		}
 
 		li a{
@@ -43,6 +57,10 @@
 			border-bottom: 2px solid;
 			border-color: #00171f;
 			transition: border-color 0.35s ease;
+
+			@media(max-width: 680px) {
+				font-size: .875em;
+			}
 
 			&:hover, &:focus {
 				border-color: #fff;

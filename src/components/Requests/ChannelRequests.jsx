@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ChannelRequests = function ( props ) {
 	return (
-		<form action="" className="ChannelRequests" onSubmit={(e) => props.requestChannel(e)}>
+		<form action="" className="ChannelRequests" onSubmit={(e) => props.reqChannel(e)}>
 			<p>Please enter your Twitch Username to request being added to the Ame bot list.</p>
 			<label>
 				Twitch username:<br />
