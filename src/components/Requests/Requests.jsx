@@ -38,6 +38,8 @@ export const Requests = class extends Component {
 			.catch(error => {
 				console.error({ error })
 			})
+
+			e.target['channelName'].value("")
 	}
 
 	commandRequest = (e) => {
@@ -64,6 +66,9 @@ export const Requests = class extends Component {
 			.catch(error => {
 				console.error({ error })
 			})
+
+			e.target['commandName'].value("");
+			e.target['commandRes'].value("");
 	}
 
 	render () {
