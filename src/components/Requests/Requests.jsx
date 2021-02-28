@@ -23,6 +23,7 @@ export const Requests = class extends Component {
 
 		fetch(`${config.API_ENDPOINT}/names`, {
 			method: 'POST',
+			mode: 'cors',
 			header: {
 				'content-type': 'application/json'
 			},
@@ -48,6 +49,7 @@ export const Requests = class extends Component {
 
 		fetch(`${config.API_ENDPOINT}/names`, {
 			method: 'POST',
+			mode: 'cors',
 			header: {
 				'content-type': 'application/json'
 			},
